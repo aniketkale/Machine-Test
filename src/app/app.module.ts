@@ -11,7 +11,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
-import { CustomerDetailComponent }  from './customer-detail/customer-detail.component';
 import { CustomerComponent }      from './customers/customers.component';
 import {MatSidenavModule} from '@angular/material';
 import {MatSortModule, MatToolbarModule, MatButtonModule, MatIconModule, MatListModule} from '@angular/material';
@@ -20,8 +19,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { UpdatecustomerComponent } from './updatecustomer/updatecustomer.component';
 import { ViewustomerComponent } from './viewustomer/viewustomer.component';
 import { AddcustomerComponent } from './addcustomer/addcustomer.component';
-import { OrderlistComponent } from './orderlist/orderlist.component';
-import { OrderdetailComponent } from './orderdetail/orderdetail.component'
  
 @NgModule({
   imports: [
@@ -48,13 +45,10 @@ import { OrderdetailComponent } from './orderdetail/orderdetail.component'
     AppComponent,
     DashboardComponent,
     CustomerComponent,
-    CustomerDetailComponent,
     MainNavComponent,
     UpdatecustomerComponent,
     ViewustomerComponent,
     AddcustomerComponent,
-    OrderlistComponent,
-    OrderdetailComponent
   ],
   bootstrap: [ AppComponent ]
 })

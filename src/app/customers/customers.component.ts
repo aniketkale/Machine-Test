@@ -53,12 +53,18 @@ export class CustomerComponent implements OnInit {
     console.log("customerList", customer)
     this.customernameList = customer;
     this.ordersArray = '';
-    this.OrderData = ''
+    this.OrderData = '';
+    this.orderarraydata = false;
   }
   ordersArray: any;
+  orderarraydata:boolean = false;
   allorders(array) {
     console.log("allarrayList", array)
-    this.ordersArray = array;
+    if(array ==  undefined){
+      this.orderarraydata = true;
+    }else{
+      this.ordersArray = array;
+    }
   }
 
   OrderData: any;
