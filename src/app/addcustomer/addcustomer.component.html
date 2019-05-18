@@ -1,0 +1,25 @@
+<div>
+  <div class="labelpanel">
+    <label> Name:</label><br>
+    <input type="text" #heroName Required />
+  </div>
+
+  <div class="labelpanel">
+    <label> Email:</label><br>
+    <input type="email" #email Required />
+  </div>
+  <div class="labelpanel">
+    <label> Mobile:</label><br>
+    <input type="number" #mobile Required />
+
+  </div>
+  <div class="labelpanel">
+    <label> Address:</label>
+    <input type="text" #address Required />
+  </div>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button
+    (click)="add(heroName.value,email.value,mobile.value,address.value); heroName.value='';email.value='';mobile.value = '';address.value=''">
+    Save
+  </button>
+</div>

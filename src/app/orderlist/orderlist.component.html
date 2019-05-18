@@ -1,0 +1,8 @@
+<ul class="heroes">
+<h1> Orders</h1>
+  <li *ngFor="let customer of customers; let i =index;">
+    <a (click)="btnClick(customer)">
+      <span class="badge">{{customer.id}}</span> {{customer.orderName}}
+    </a>
+  </li>
+</ul>

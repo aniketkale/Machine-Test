@@ -1,0 +1,18 @@
+<div class="customer">
+    <h2>Customers</h2>
+</div>
+
+<div class="customer_plus">
+<button routerLink="/add">
+  +
+</button>
+</div>
+
+
+<ul class="heroes">
+  <li *ngFor="let customer of customers">
+    <a routerLink="/detail/{{customer.id}}">
+      <span class="badge">{{customer.id}}</span> {{customer.name}}
+    </a>
+  </li>
+</ul>
