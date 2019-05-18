@@ -52,6 +52,8 @@ export class CustomerComponent implements OnInit {
   customerlist(customer) {
     console.log("customerList", customer)
     this.customernameList = customer;
+    this.ordersArray = '';
+    this.OrderData = ''
   }
   ordersArray: any;
   allorders(array) {
