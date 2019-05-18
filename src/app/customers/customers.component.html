@@ -11,8 +11,59 @@
 
 <ul class="heroes">
   <li *ngFor="let customer of customers">
-    <a routerLink="/detail/{{customer.id}}">
+    <a (click)="customerlist(customer)">
       <span class="badge">{{customer.id}}</span> {{customer.name}}
     </a>
   </li>
 </ul>
+
+<div *ngIf="customernameList" class="customernamelist">
+  <h2>{{customernameList.name | uppercase}} </h2> 
+  <div>
+  <button (click)="allorders(customernameList.array)">Orders</button>
+</div>
+<div>
+    <button routerLink="/view/{{customernameList.id}}">Detail</button>
+  </div>
+  <div>
+  <button routerLink="/update/{{customernameList.id}}">Edit</button>
+</div>
+<div>
+  <button (click)="delete(customernameList)">Delete</button>
+</div>
+</div>
+
+<div  *ngIf="ordersArray">
+<ul class="heroes1">
+    <h1> Orders</h1>
+      <li *ngFor="let customer of ordersArray; let i =index;">
+        <a (click)="btnClick(customer)">
+          <span class="badge">{{customer.id}}</span> {{customer.orderName}}
+        </a>
+      </li>
+      
+    </ul>
+  </div> 
+  
+  
+  <h1 *ngIf="OrderData" class="order-detail">Order Details </h1> 
+  <div *ngIf="OrderData" class="orderdata">
+      <div class="info">
+        <div class="info9">
+        <label>OrderName:
+          {{OrderData.orderName}}
+        </label>
+      </div>
+      <div class="info9">
+        <label>Quantity:
+           {{OrderData.quantity}}
+        </label>
+      </div>
+      <div class="info9">
+        <label>OrderNumber:
+          {{OrderData.orderNum}}
+        </label>
+      </div>
+      </div>
+        
+      </div>

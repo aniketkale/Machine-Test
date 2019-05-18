@@ -19,19 +19,19 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id:2,
         orderName:'order2',
-        quantity:5,
-        orderNum:4
+        quantity:7,
+        orderNum:67890
       },
       {
         id:3,
         orderName:'order3',
-        quantity:5,
-        orderNum:42356
+        quantity:10,
+        orderNum:3456767
       },
       {
         id:4,
-        orderName:'order3',
-        quantity:5,
+        orderName:'order4',
+        quantity:9,
         orderNum:4456457
       }
     ]
@@ -40,26 +40,26 @@ export class InMemoryDataService implements InMemoryDbService {
       array:[
         {
           id:1,
-          orderName:'order1',
+          orderName:'order5',
           quantity:5,
           orderNum:464574
         },
         {
           id:2,
-          orderName:'order2',
-          quantity:5,
+          orderName:'order6',
+          quantity:3,
           orderNum:4
         },
         {
           id:3,
-          orderName:'order3',
-          quantity:5,
-          orderNum:42356
+          orderName:'order7',
+          quantity:7,
+          orderNum:23456
         },
         {
           id:4,
-          orderName:'order3',
-          quantity:5,
+          orderName:'order8',
+          quantity:6,
           orderNum:4456457
         }
     
@@ -69,27 +69,27 @@ export class InMemoryDataService implements InMemoryDbService {
       array:[
         {
           id:1,
-          orderName:'order1',
+          orderName:'order9',
           quantity:5,
           orderNum:464574
         },
         {
           id:2,
-          orderName:'order2',
-          quantity:5,
-          orderNum:4
+          orderName:'order10',
+          quantity:4,
+          orderNum:44567
         },
         {
           id:3,
-          orderName:'order3',
-          quantity:5,
+          orderName:'order11',
+          quantity:3,
           orderNum:42356
         },
         {
           id:4,
-          orderName:'order3',
-          quantity:5,
-          orderNum:4456457
+          orderName:'order12',
+          quantity:2,
+          orderNum:3456
         }
     
     ]

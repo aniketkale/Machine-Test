@@ -12,19 +12,19 @@ export const CUSTOMERS: Interface[] = [
   {
     id:2,
     orderName:'order2',
-    quantity:5,
-    orderNum:4
+    quantity:3,
+    orderNum:456789
   },
   {
     id:3,
     orderName:'order3',
-    quantity:5,
+    quantity:7,
     orderNum:42356
   },
   {
     id:4,
     orderName:'order4',
-    quantity:5,
+    quantity:9,
     orderNum:4456457
   }
 ]
@@ -33,26 +33,26 @@ export const CUSTOMERS: Interface[] = [
   array:[
     {
       id:1,
-      orderName:'order4',
+      orderName:'order5',
       quantity:5,
       orderNum:464574
     },
     {
       id:2,
-      orderName:'order5',
-      quantity:5,
+      orderName:'order6',
+      quantity:9,
       orderNum:4
     },
     {
       id:3,
-      orderName:'order6',
-      quantity:5,
+      orderName:'order7',
+      quantity:8,
       orderNum:42356
     },
     {
       id:4,
-      orderName:'order7',
-      quantity:5,
+      orderName:'order8',
+      quantity:4,
       orderNum:4456457
     }
 
@@ -62,26 +62,26 @@ export const CUSTOMERS: Interface[] = [
   array:[
     {
       id:1,
-      orderName:'order8',
-      quantity:5,
+      orderName:'order9',
+      quantity:2,
       orderNum:464574
     },
     {
       id:2,
-      orderName:'order9',
-      quantity:5,
+      orderName:'order10',
+      quantity:3,
       orderNum:4
     },
     {
       id:3,
-      orderName:'order10',
-      quantity:5,
+      orderName:'order11',
+      quantity:9,
       orderNum:42356
     },
     {
       id:4,
-      orderName:'order11',
-      quantity:5,
+      orderName:'order12',
+      quantity:8,
       orderNum:4456457
     }
 

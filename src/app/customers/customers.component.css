@@ -1,11 +1,37 @@
 /* HeroesComponent's private CSS styles */
 .heroes {
-  margin: 0 0 2em 0;
+  margin: 0px 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  width: 20%;
+  float: left;
+  margin-right: 23px;
+}
+
+.heroes1 {
+  margin: -90px 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+  float: left;
+  margin-right: 23px;
+}
+
+.heroes1 h1{
+padding-top: 20px;
+margin-bottom: 0px;
 }
 .heroes li {
+  position: relative;
+  cursor: pointer;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.heroes1 li {
   position: relative;
   cursor: pointer;
   background-color: #EEE;
@@ -29,12 +55,51 @@ width:40%;
   left: .1em;
 }
 
-.heroes a {
+
+.heroes1 li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+
+
+.heroes1 a {
   color: #888;
   text-decoration: none;
   position: relative;
   display: block;
   width: 250px;
+}
+
+.heroes1 a:hover {
+  color:#607D8B;
+}
+
+.heroes1 .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: right;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+
+.heroes a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  float: left;
+
 }
 
 .heroes a:hover {
@@ -66,6 +131,13 @@ button {
   cursor: pointer;
   cursor: hand;
   font-family: Arial;
+  margin-bottom: 10px;
+}
+
+.customernamelist{
+  float: left;
+  margin-right: 30px;
+  margin-top: -54px;
 }
 
 button:hover {
@@ -80,3 +152,29 @@ button.delete {
   color: white;
 }
 
+
+.orderdata{
+  float: left;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 14px;
+  margin-left: 25px;
+  line-height: 29px; 
+}
+
+.order-detail{
+  margin-top: -41px;
+  margin-bottom: 0px;
+  font-size: 36px; 
+}
+/* .info{
+  border: 1px solid #ccc;
+  padding: 24px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.info9{
+  margin-bottom: 10px;
+  font-size: 20px;
+} */

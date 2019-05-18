@@ -43,9 +43,6 @@ console.log("customerId",this.customerId)
       .subscribe(() => this.goBack());
   }
 
-  delete(customer: Interface): void {
-    this.customerService.deleteCustomer(customer)
-    .subscribe(() => this.goBack());
-  }
+
 
 }
